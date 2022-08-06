@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=400px height=250px src="./readme_assets/img/one.jpg" alt="Project logo"></a>
+ <img width=400px height=250px src="./assets/img/one.jpg" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Text Cipher</h3>
