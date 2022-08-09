@@ -40,6 +40,14 @@ header {
     color: #0A3871;
 }
 
+.text-bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .btn {
     border: none;
     cursor: pointer;
@@ -56,7 +64,7 @@ header {
     color: #E9ECF8;
 }
 
-#decrypt-btn {
+#decrypt-btn, #copy-btn {
     background-color: transparent;
     color: #0A3871;
     border: #0A3871 solid 1px;
@@ -67,6 +75,26 @@ header {
     display: flex;
 }
 
+#output-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);;
+}
+
+.output-container {
+    text-align: center;
+}
+
+#message-output {
+    color: #0A3871;
+    margin-top: 1rem;
+    text-align: left;
+}
 /* End custom styles */
 
 
@@ -114,6 +142,10 @@ header {
     .button-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    #copy-btn {
+        display: none;
     }
 }
 
