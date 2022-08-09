@@ -40,9 +40,9 @@
                         autocomplete="off" autofocus
                         placeholder="Input the message."
                         required></textarea>
-                        <div class="alert-contaniner">
+                        <div class="alert-container text-center">
                             <img src="./assets/svg/alert.svg" alt="alert" class="icon">
-                            <span>Only english lowercase alphabet allowed.</span>
+                            <span id="warning-message">Only english lowercase alphabet allowed.</span>
                         </div>
                     </div>
                     <div class="button-container">
@@ -52,9 +52,9 @@
                 </section>
                 <section id="output-side">
                     <div class="output-container">
-                        <span class="text-bold text-center">No message was found!</span>
+                        <span class="text-bold text-center" id="empty-message">No message was found!</span>
                         <p id="message-output" class="text-center">
-                            Input the message that you'd like to encrypt o decrypt.
+                            Input the message that you'd like to encrypt or decrypt.
                         </p>
                     </div>
                     <div class="button-container">

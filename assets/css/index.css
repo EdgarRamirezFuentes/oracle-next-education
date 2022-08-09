@@ -14,23 +14,15 @@ header {
 
 /* Custom styles */
 
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 15px;
-    width: 100%;
-}
-
-.row {
-    margin-left: -15px;
-    margin-right: -15px;
+#input-side {
+    height: 60vh;
+    padding: 1 rem;
 }
 
 #message-input {
     background-color: transparent;
     border: none;
     color: #0A3871;
-    font-size: 1.3rem;
     outline: none;
     padding: .5rem;
     resize: none;
@@ -38,25 +30,6 @@ header {
 
 #message-input::placeholder {
     color: #0A3871;
-}
-
-.text-bold {
-    font-weight: bold;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.btn {
-    border: none;
-    cursor: pointer;
-    font-size: 1.3rem;
-    padding: .8rem;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    border-radius: 2.5rem;
 }
 
 #encrypt-btn {
@@ -70,11 +43,6 @@ header {
     border: #0A3871 solid 1px;
 }
 
-.button-container {
-    margin-top: 1rem;
-    display: flex;
-}
-
 #output-side {
     display: flex;
     flex-direction: column;
@@ -86,21 +54,120 @@ header {
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);;
 }
 
+#message-output {
+    color: #0A3871;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#copy-btn {
+    width: 100%;
+    margin: 1rem;
+}
+
+#input-container {
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#message-input {
+    height: 90%;
+    width: 90%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    width: 50%;
+    margin: 0rem 1rem;
+}
+
 .output-container {
     text-align: center;
 }
 
-#message-output {
-    color: #0A3871;
+.button-container {
     margin-top: 1rem;
-    text-align: left;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
+
 /* End custom styles */
 
 
 /* Mobile styles */
 
 @media (max-width: 767px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    #warning-message {
+        font-size: .8rem;
+    }
+
+    #message-input {
+        font-size: 1.3rem;
+    }
+
+    #input-container {
+        display: flex;
+        height: 70%;
+        width: 100%;
+    }
+
+    #input-side {
+        padding: 0rem 2rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: .8rem;
+    }
+    .icon {
+        width: .8rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .container {
         padding: 0;
         width: 100%;
@@ -110,43 +177,38 @@ header {
         margin-left: 0;
         margin-right: 0;
     }
-
-    #input-side {
-        height: 70vh;
-        padding: 1 rem;
-    }
-
-    #input-container {
-        display: flex;
-        height: 70%;
-        justify-content: center;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #message-input {
-        height: 90%;
-        width: 90%;
-    }
-
-    .icon {
-        width: .8rem;
-    }
-
-    .btn {
-        width: 80%;
-        margin-top: 1rem;
-    }
-
-    .button-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #copy-btn {
-        display: none;
-    }
 }
 
 /* End mobile styles */
+
+/* Tablet styles */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 2rem;
+    }
+
+    #input-side {
+        padding: 0rem 3rem;
+    }
+
+    #message-input {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* End tablet styles */
