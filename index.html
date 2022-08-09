@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
 
@@ -30,11 +31,30 @@
         <img src="./assets/svg/logo.svg" alt="Logo">
     </header>
     <main>
-        <section class="container">
+        <div class="container">
             <div class="row">
-                <h1>Challenge 1</h1>
+                <section id="encryption-side">
+                    <div id="input-container">
+                        <textarea 
+                        name="message" id="message"
+                        autocomplete="off" autofocus
+                        placeholder="Input the message."
+                        required></textarea>
+                        <div class="alert-contaniner">
+                            <img src="./assets/svg/alert.svg" alt="alert" class="icon">
+                            <span>Only english lowercase alphabet allowed.</span>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button:button class="btn" id="encrypt-btn">Encrypt</button:button>
+                        <button:button class="btn" id="decrypt-btn">Decrypt</button:button>
+                    </div>
+                </section>
+                <section id="decryption-side">
+                    <h2>Decryption side</h2>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
     <footer>
     </footer>

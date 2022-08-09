@@ -4,6 +4,7 @@
 </p>
 
 <h3 align="center">Text Cipher</h3>
+
 ---
 
 <p align="center"> 
