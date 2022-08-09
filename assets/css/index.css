@@ -15,7 +15,7 @@ header {
 /* Custom styles */
 
 #input-side {
-    height: 60vh;
+    height: 70vh;
     padding: 1 rem;
 }
 
@@ -46,12 +46,12 @@ header {
 #output-side {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0 2rem;
     padding: 1.5rem;
     background-color: #ffffff;
     border-radius: 1.5rem;
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 #message-output {
@@ -67,28 +67,36 @@ header {
 
 #input-container {
     display: flex;
-    height: 80%;
+    height: 90%;
     justify-content: center;
     width: 100%;
     flex-direction: column;
     align-items: center;
 }
 
+
 #message-input {
     height: 90%;
     width: 90%;
 }
 
+#kid {
+    width: 70%;
+    margin: 1.5rem auto;
+    padding: 0;
+    display: block;
+
+}
+
 .container {
-    margin: 0 auto;
-    max-width: 1200px;
+    margin: auto;
     padding: 0 15px;
-    width: 100%;
 }
 
 .row {
     margin-left: -15px;
     margin-right: -15px;
+    max-width: 100vw;
 }
 
 .text-bold {
@@ -108,6 +116,10 @@ header {
     padding: 1rem;
     width: 50%;
     margin: 0rem 1rem;
+}
+
+.btn:hover {
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .output-container {
@@ -154,6 +166,7 @@ header {
         width: 100%;
         padding: .8rem;
     }
+
     .icon {
         width: .8rem;
     }
@@ -212,3 +225,40 @@ header {
 }
 
 /* End tablet styles */
+
+/* Desktop styles */
+
+@media (min-width: 992px) {
+
+    body {
+        font-size: 1.5rem;
+    }
+
+    #input-side {
+        padding: 0rem 4rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    #message-input {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: space-between;
+        height: 80vh;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+}
+
+/* End desktop styles */
