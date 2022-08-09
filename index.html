@@ -33,10 +33,10 @@
     <main>
         <div class="container">
             <div class="row">
-                <section id="encryption-side">
+                <section id="input-side">
                     <div id="input-container">
                         <textarea 
-                        name="message" id="message"
+                        name="message-input" id="message-input"
                         autocomplete="off" autofocus
                         placeholder="Input the message."
                         required></textarea>
@@ -46,12 +46,14 @@
                         </div>
                     </div>
                     <div class="button-container">
-                        <button:button class="btn" id="encrypt-btn">Encrypt</button:button>
-                        <button:button class="btn" id="decrypt-btn">Decrypt</button:button>
+                        <button type="button" class="btn" id="encrypt-btn">Encrypt</button>
+                        <button type="button" class="btn" id="decrypt-btn">Decrypt</button>
                     </div>
                 </section>
-                <section id="decryption-side">
-                    <h2>Decryption side</h2>
+                <section id="output-side">
+                    <div class="output-container">
+                        <p id="message-output"></p>
+                    </div>
                 </section>
             </div>
         </div>
