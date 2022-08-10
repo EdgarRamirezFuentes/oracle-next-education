@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="./assets/css/fonts.css">
 
     <!-- Scripts -->
-    <script src="./assets/js/index..js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./assets/js/index..js"></script>
 
     <title>Challenge 1</title>
 </head>
@@ -31,6 +32,7 @@
         <img src="./assets/svg/logo.svg" alt="Logo">
     </header>
     <main>
+        <h1 class="text-center text-bold">Oracle ONE - Challenge 1</h1>
         <div class="container">
             <div class="row">
                 <section id="input-side">
@@ -42,7 +44,7 @@
                         required></textarea>
                         <div class="alert-container text-center">
                             <img src="./assets/svg/alert.svg" alt="alert" class="icon">
-                            <span id="warning-message">Only english lowercase alphabet allowed.</span>
+                            <span id="warning-message">Only dictionary words and spaces allowed.</span>
                         </div>
                     </div>
                     <div class="button-container">
@@ -53,7 +55,7 @@
                 <section id="output-side">
                     <div class="output-container">
                         <img src="./assets/svg/kid.svg" alt="kid" id="kid">
-                        <span class="text-bold text-center" id="empty-message">No message was found!</span>
+                        <span class="text-bold text-center" id="status-message">No message was found!</span>
                         <p id="message-output" class="text-center">
                             Input the message that you'd like to encrypt or decrypt.
                         </p>
@@ -66,6 +68,7 @@
         </div>
     </main>
     <footer>
+        <p>Developed by <a href="https://github.com/EdgarRamirezFuentes" target="_blank">Edgar Ramírez</a></p>
     </footer>
 </body>
 </html>

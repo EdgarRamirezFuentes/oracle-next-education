@@ -10,6 +10,24 @@ header {
     padding: 1rem 0rem;
 }
 
+h1 {
+    margin: 2.5rem 0rem;
+}
+
+footer {
+    text-align: center;
+    flex: 1;
+    background-color: #0A3871;
+    color: #ffffff;
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+}
+
+footer  a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
 /* End Tag styles */
 
 /* Custom styles */
@@ -63,11 +81,12 @@ header {
 #copy-btn {
     width: 100%;
     margin: 1rem;
+    display: none;
 }
 
 #input-container {
     display: flex;
-    height: 90%;
+    height: 85%;
     justify-content: center;
     width: 100%;
     flex-direction: column;
@@ -238,6 +257,10 @@ header {
         padding: 0rem 4rem;
         width: 100%;
         height: 100%;
+    }
+
+    #output-side {
+        width: 40%;
     }
 
     #message-input {
