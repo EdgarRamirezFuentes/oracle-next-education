@@ -3,7 +3,7 @@
  <img width=400px height=250px src="./assets/img/one.jpg" alt="Project logo"></a>
 </p>
 
-<h3 align="center">Text Cipher</h3>
+<h3 align="center">Oracle ONE Challenge 1</h3>
 
 ---
 
@@ -17,9 +17,7 @@
 - [Getting Started](#getting_started)
 - [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
 
@@ -66,9 +64,52 @@ We have a period of four weeks to develop the project and we are going to work w
 
 ## 🎈 Usage <a name="usage"></a>
 
+### 🔒 Encryption
+
+To encrypt a message, this must fulfill some requirements, such as:
+- The message must only contain lowercase letters.
+- The message must only contain english dictionary words.
+- The message could contain spaces.
+
+If the message fulfills all the requirements above, follow the next steps:
+
+- Input/paste the message that you want to encrypt.
+
+![input image start](./assets/img/input_image_start.png)
+![input image](./assets/img/input_image.png)
+
+- Click on the __Encrypt__ button.
+
+![encrypted message](./assets/img/encrypted_message.png)
+
+You can click on the __Copy__ button to copy the output in the clipboard.
+
+![clipboard button](./assets/img/clipboard_button.png)
+
+If the message does not fulfills the requirements above, a message will be shown
+and the message will not be encrypted.
+
+![invalid message start](./assets/img/invalid_input_start.png)
+![invalid message](./assets/img/invalid_input.png)
+
+### 🔓 Decryption
+
+To decrypt a message follow the next steps:
+
+- Input/paste the encrypted message.
+
+![encrypted message input](./assets/img/decrypt_message.png)
+
+- Click on the __Decrypt__ button.
+
+![decrypted message](./assets/img/decrypted_message.png)
+
+You can click on the __Copy__ button to copy the output in the clipboard.
+
+![clipboard button](./assets/img/decrypted_clipboard.png)
 
 ## 🚀 Deployment <a name = "deployment"></a>
-
+The project was deployed using Netlify, you can check the project [here.](https://oracle-one-challenge-1.netlify.app/)
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
@@ -79,6 +120,4 @@ We have a period of four weeks to develop the project and we are going to work w
 ## ✍️ Authors <a name = "authors"></a>
 
 - [EdgarRamirezFuentes](https://github.com/EdgarRamirezFuentes)
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
